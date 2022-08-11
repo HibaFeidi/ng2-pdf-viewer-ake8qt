@@ -1,0 +1,21 @@
+<h2>ng2-pdf-viewer simple usage</h2>
+<div id="outerContainer">
+  <div class="pdf-container">
+    <pdf-viewer
+      [src]="src"
+      [(page)]="page"
+      [rotation]="0"
+      [original-size]="false"
+      [show-all]="true"
+      [fit-to-page]="false"
+      [zoom]="1"
+      [zoom-scale]="'page-width'"
+      [stick-to-page]="false"
+      [render-text]="true"
+      [autoresize]="true"
+      [show-borders]="false"
+      (page-rendered)="pageRendered($event)"
+      style="width: 100%; height: 600px;"
+    ></pdf-viewer>
+  </div>
+</div>
